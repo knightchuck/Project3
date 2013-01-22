@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+section {
+
+height: 500px; /* Compensate for cube */
+
+}
+
+
+
+#cube {
+
+position: relative;
+
+left: 75px;
+
+top: 50px;
+
+}
+
+
+
+#spinner div {
+
+position: absolute;
+
+width: 360px;
+
+height: 360px;
+
+border: 1px solid gray;
+
+background: white;
+
+text-align: center;
+
+line-height: 360px;
+
+font-size: 300px;
+
+}
+
+/* #spinner{
+
+-webkit-box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+
+-webkit-backface-visibility: hidden;
+
+}*/
+
+
+
+#face1 {
+
+-webkit-transform: translateZ(180px);
+
+}
+
+#face2 {
+
+-webkit-transform: rotateY(90deg) translateZ(180px);
+
+}
+
+#face3 {
+
+-webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(180px);
+
+}
+
+#face4 {
+
+-webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(180px);
+
+}
+
+#face5 {
+
+-webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(180px);
+
+}
+
+#face6 {
+
+-webkit-transform: rotateX(-90deg) translateZ(180px);
+
+}
+
+
+
+@-webkit-keyframes spincube {
+
+16% {
+
+-webkit-transform: rotateY(-90deg);
+
+}
+
+33% {
+
+-webkit-transform: rotateY(-90deg) rotateZ(90deg);
+
+}
+
+50% {
+
+-webkit-transform: rotateY(180deg) rotateZ(90deg);
+
+}
+
+66% {
+
+-webkit-transform: rotateY(90deg) rotateX(90deg);
+
+}
+
+83% {
+
+-webkit-transform: rotateX(90deg);
+
+}
+
+}
+
+
+
+#spinner {
+
+-webkit-animation-name: spincube;
+
+-webkit-animation-timing-function: ease-in-out;
+
+-webkit-animation-iteration-count: infinite;
+
+-webkit-animation-duration: 12s;
+
+-webkit-transform-style: preserve-3d;
+
+-webkit-transform-origin: 180px 180px 0px;
+
+}
+
+
+
+
+
+/* Album Covers */
+
+div #spinner div {
+
+background-size: 100% 100%;
+
+background-repeat: no-repeat;
+
+}
+
+
+
+div #face1 {
+
+background-image: url('style/silver.jpg');
+
+}
+
+
+
+div #face2 {
+
+background-image: url('style/silver.jpg');
+
+}
+
+
+
+div #face3 {
+
+background-image: url('sytle/silver.jpg');
+
+}
+
+
+
+div #face4 {
+
+background-image: url('images/the_yellow_album.png');
+
+}
+
+
+
+div #face5 {
+
+background-image: url('images/sing_the_blues.gif');
+
+}
+
+
+
+div #face6 {
+
+background-image: url('style/silver.jpg');
+
+}
+
+
+
+</style>
+
+<head>
+  <title>Trumpet Boutique</title>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+  <!-- *layout css* -->
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+  <!-- colors css  -->
+  <link rel="stylesheet" type="text/css" href="style/orange.css" />
+
+</head>
+<embed src="blue.wav"
+       autostart="true"
+       hidden="true"
+       loop="false">
+</embed>
+<body>
+ <div style="width:180px;height:1600px;background-color:black;position:absolute;top:0px;right:0px;"></div>
+  <div id="main">
+    <div id="links">
+      <!-- **** INSERT LINKS HERE **** -->
+      <a href="#">another link</a> | <a href="#">another link</a> | <a href="#">another link</a> | <a href="#">another link</a>
+    </div>
+     <div id="logo"><h1><span style="background-color: gray;">TRUMPET BOUTIQUE</h1></span><h2><span style="background-color: gray;">&quot;for the trumpet connoisseur&quot;</h2></span></div>
+    <div id="menu">
+      <ul>
+        <!-- **** INSERT NAVIGATION ITEMS HERE (use id="selected" to identify the page you're on **** -->
+        <li><a id="selected" href="#">home</a></li>
+        <li><a href="#">page 1</a></li>
+        <li><a href="#">page 2</a></li>
+        <li><a href="#">page 3</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <div id="column1">
+        <div class="sidebaritem">
+          <h1>latest news</h1>
+          <!-- **** INSERT NEWS ITEMS HERE **** -->
+          <h2>01.12.2013</h2>
+          <p>REPORTS: Chuck's IPAD odds reach all-time low.</p>
+          <p><a href="#"></a></p>
+          <p></p>
+          <p></p>
+          <h2>01.18.2013</h2>
+          <p>CHUCK'S TRUMPET BOUTIQUE RECEIVES RAVE REVIEWS!.</p>
+          <p><a href="#"></a></p>
+        </div>
+        <div class="sidebaritem">
+          <h1>additional links</h1>
+          <div class="sbilinks">
+            <!-- **** INSERT ADDITIONAL LINKS HERE **** -->
+            <ul>
+              <li><a href="http://www.openwebdesign.org">open web design</a></li>
+              <li><a href="http://www.w3schools.com/xhtml/default.asp">learn XHTML</a></li>
+              <li><a href="http://www.w3schools.com/css/default.asp">learn CSS</a></li>
+              <li><a href="http://www.mozilla.com/firefox">get firefox</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebaritem">
+          <h1>COME ON IN</h1>
+          <!-- **** INSERT OTHER INFORMATION HERE, information or graphic or contact or whatever **** -->
+          <p>
+            Please Browse Our Site or come to our store at 123 Virtual Lane, World Wide Web, NJ  01111
+          </p>
+        </div>
+      </div>
+      <div id="column2">
+        <h1>Welcome Trumpet Connoisseurs</h1>
+        <!-- **** INSERT PAGE CONTENT HERE **** -->
+        <p>
+          Our unique trumpet store is brought to you buy Chuck Berger, a novice and student
+          of Crossfire's Building Advanced Websites Course.  With no programming experience, 
+          he tried to keep up week after week with his gifted and talented classmates.  Alas,
+          this website is what he mustered from the inifinite subject matter and information
+          provided by the class curriculum.
+          
+          He found a design template that appealed to him, used it as a foundation, and changed it using techniques he retained.
+          While Chuck likes guitars and would love to learn to play, he chose to create a trumpet shop since the teachers
+          agreed choosing something other than guitars would be acceptable.
+        </p>
+        
+        <p>
+          
+        <!--  <h1>alternative colour schemes</h1>
+        <p>Here are some alternative colour schemes for anyone who doesn't like orange:</p>
+        <div id="colour">
+          <a href="index_blue.html"><span class="blue">blue</span></a>
+          <a href="index_green.html"><span class="green">green</span></a>
+          <a href="index_purple.html"><span class="purple">purple</span></a>
+          <a href="index.html"><span class="orange">orange</span></a>
+        </div>-->
+        <h1>products</h1>
+        <h2>Bold Text</h2>
+        <p><strong>this is an example of bold text</strong></p>
+        <h2>Italics</h2>
+        <p><i>this is an example of italic text</i></p>
+        <h2>Links</h2>
+        <p><a href="index.html">this is an example link</a></p>
+        <h2>Block Quotes</h2>
+        <blockquote>
+          <p>
+            Some blockquote text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </p>
+        </blockquote>
+        <h2>Unordered Lists</h2>
+        <ul>
+          <li>list item 1</li>
+          <li>list item 2</li>
+        </ul>
+        <br />
+        <h2>Ordered Lists</h2>
+        <ol>
+          <li>list item 1</li>
+          <li>list item 2</li>
+        </ol>
+        <br />
+        
+        <!--
+        <h2>Images</h2>
+        <p>images can be placed on the left, in the center or on the right.</p>
+        <span class="left"><img src="style/silver.jpg" alt="example graphic" /></span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+        <!-- <span class="center"><img src="style/silver.jpg" alt="example graphic" /></span> -->
+        <span class="right"><img src="style/silver.jpg" alt="example graphic" /></span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+      </div>
+     
+    </div>
+     -->
+     
+    <div id="footer">
+      copyright &copy; 2013 Plagiarized and Modified by Chuck Berger with permission from D Carter  </div>
+  </div>
+</body>
+</html>
