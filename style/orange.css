@@ -28,6 +28,12 @@ h1, #column1 h1, #column2 h1
   border-color: #787878;
 }
 
+h3, #column1 h3, #column2 h3
+{ background: transparent;
+  color: #FF9C27;
+  border-color: #787878;
+}
+
 #menu
 { background: transparent;
   color: #D5D2D6;
